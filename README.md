@@ -29,7 +29,7 @@ Welcome to **Auth-Front**, the second version of my authentication project! Prev
    - Main form: `http://localhost`
    - API (via proxy): `http://localhost/api/`
 
-**Note**: The back-end is in the `auth-backend` repository (replace with the actual name or link). Ensure the back-end API is running and accessible for proxy integration.
+**Note**: The back-end is in the `auth-backend` repository. Ensure the back-end API is running and accessible for proxy integration.
 
 ## Styling
 The front-end uses an elegant dark theme:
