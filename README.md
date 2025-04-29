@@ -49,3 +49,4 @@ Nginx serves static files and proxies to the Go API.
 ## Project running:
 Watch a quick demonstration of the login form in action:
 Watch the demo: [Auth-Front](https://youtu.be/5lnTijzwjH4?feature=shared)
+[![Front-end for login page](https://raw.githubusercontent.com/ak7r4/Auth-Front/refs/heads/main/demo.png)](https://www.youtube.com/watch?v=SEU_VIDEO_ID)
