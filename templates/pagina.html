@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+
+        <form id="form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required autocomplete="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+            <br>
+            <div class="g-recaptcha" data-sitekey="6Lf7me4qAAAAABYxkv1dYO6LhEITN5L8VGkvIzjN"></div>
+            <br>
+            <button type="submit">Login</button>
+            <p class="signup-message">Don't have an account? <a href="/signup">Sign Up</a></p>
+        </form>
+        <script src="/assets/js/login.js"></script>
+    </div>
+</body>
+</html>
