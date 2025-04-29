@@ -45,3 +45,7 @@ Nginx serves static files and proxies to the Go API.
 - **reCAPTCHA**: Configure your key in the [Google reCAPTCHA Admin](https://www.google.com/recaptcha/admin) for the main form.
 - **Issues?**: Verify that the Nginx configuration points to the correct back-end API endpoint.
 - **Suggestions?**: I’d love to hear your ideas! Open an issue or send a PR.
+
+## Project running:
+Watch a quick demonstration of the login form in action:
+Watch the demo: [Auth-Front](https://youtu.be/5lnTijzwjH4?feature=shared)
