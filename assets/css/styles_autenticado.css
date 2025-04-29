@@ -1,0 +1,57 @@
+* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark gray-black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.login-container {
+    background-color: #2c2c2c; /* Darker container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilo do título */
+h1 {
+    color: #e0e0e0; /* Light gray for text */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Alinha os botões em coluna */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo do botão */
+button {
+    width: 100%; /* Garante que o botão ocupe 100% da largura do container */
+    padding: 10px;
+    background-color: #1e90ff; /* Bright blue for button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #1c86ee; /* Slightly darker blue on hover */
+}
