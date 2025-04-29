@@ -1,0 +1,58 @@
+#here is the config file for nginx, save on your /etc/nginx/sites-available/default
+#My backend is 192.168.15.6:8080, remember to change this.
+server {
+    listen 80;
+
+    server_name localhost;
+
+    location /api/ {
+        proxy_pass http://192.168.15.6:8080/;
+        proxy_cookie_path / /;
+        include /etc/nginx/proxy_headers.conf;  # Inclui os cabeçalhos comuns
+    }
+
+    location /success {
+        auth_request /auth;
+        auth_request_set $auth_cookie $upstream_http_set_cookie;
+        add_header Set-Cookie $auth_cookie;
+        root /var/www/frontend/templates/protected;
+        try_files /autenticado.html =404;
+        error_page 401 403 /;  # Redireciona para / em caso de falha na autenticação
+    }
+
+    location = /auth {
+        internal;
+        proxy_pass http://192.168.15.6:8080/auth;
+        include /etc/nginx/proxy_headers.conf;  # Inclui os cabeçalhos comuns
+    }
+
+
+    location /logout {
+        auth_request /auth;
+        include /etc/nginx/proxy_headers.conf;  # Usa os mesmos cabeçalhos
+        proxy_pass_header Access-Control-Allow-Methods;
+        proxy_pass_header Access-Control-Allow-Headers;
+        proxy_pass_header Access-Control-Allow-Credentials;
+    }
+
+    location /signup {
+        root /var/www/frontend/templates;
+        try_files /signup.html =404;
+
+    }
+    location / {
+        root /var/www/frontend;
+        index templates/pagina.html;
+        try_files $uri $uri/ templates/pagina.html;
+    }
+    location /change {
+        auth_request /auth;
+        root /var/www/frontend/templates/protected;
+        try_files /change.html =404;
+        error_page 401 403 /;  # Redireciona para / em caso de falha na autenticação
+    }
+    location /templates/protected {
+        deny all;
+    }
+
+}
