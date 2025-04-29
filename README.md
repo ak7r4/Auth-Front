@@ -7,7 +7,7 @@ Watch a quick demonstration of the login form in action:
 <br>
 [https://youtu.be/5lnTijzwjH4?feature=shared](https://youtu.be/5lnTijzwjH4?feature=shared)
 <br>
-[![Front-end for login page](https://raw.githubusercontent.com/ak7r4/Auth-Front/refs/heads/main/demo.png)](https://youtu.be/5lnTijzwjH4?feature=shared)
+[![Front-end for login page](https://raw.githubusercontent.com/ak7r4/Auth-Front/refs/heads/main/demonstration.png)](https://youtu.be/5lnTijzwjH4?feature=shared)
 
 ## Structure
 - `templates/`: HTML files (e.g., `signup.html`)
