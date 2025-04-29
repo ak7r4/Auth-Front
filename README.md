@@ -2,6 +2,13 @@
 
 Welcome to **Auth-Front**, the second version of my authentication project! Previously, I had a monolithic application, but now I've separated the front-end and back-end (in Go) into different machines. This repository contains the static front-end, with dark-themed login forms, served by Nginx and integrated with the API via proxy. The old version is here: [Monolithic Version](https://github.com/ak7r4/auth-project).
 
+## Demonstration:
+Watch a quick demonstration of the login form in action:
+<br>
+[https://youtu.be/5lnTijzwjH4?feature=shared](https://youtu.be/5lnTijzwjH4?feature=shared)
+<br>
+[![Front-end for login page](https://raw.githubusercontent.com/ak7r4/Auth-Front/refs/heads/main/demo.png)](https://youtu.be/5lnTijzwjH4?feature=shared)
+
 ## Structure
 - `templates/`: HTML files (e.g., `signup.html`)
 - `assets/`: CSS and JS files (e.g., `styles.css`)
@@ -45,10 +52,3 @@ Nginx serves static files and proxies to the Go API.
 - **reCAPTCHA**: Configure your key in the [Google reCAPTCHA Admin](https://www.google.com/recaptcha/admin) for the main form.
 - **Issues?**: Verify that the Nginx configuration points to the correct back-end API endpoint.
 - **Suggestions?**: I’d love to hear your ideas! Open an issue or send a PR.
-
-## Project running:
-Watch a quick demonstration of the login form in action:
-<br>
-[https://youtu.be/5lnTijzwjH4?feature=shared](https://youtu.be/5lnTijzwjH4?feature=shared)
-<br>
-[![Front-end for login page](https://raw.githubusercontent.com/ak7r4/Auth-Front/refs/heads/main/demo.png)](https://youtu.be/5lnTijzwjH4?feature=shared)
